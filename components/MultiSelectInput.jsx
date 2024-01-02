@@ -1,11 +1,7 @@
-// components/MultiSelectInput.js
 export default function MultiSelectInput({ id, label, options = [], value, onChange }) {
-  
-  // Handler for when the selection changes
   const handleChange = (event) => {
-    // Get all selected options from the event target (the select element)
     const selectedOptions = Array.from(event.target.selectedOptions, option => option.value);
-    onChange(selectedOptions); // Pass the array of selected options to the onChange handler
+    onChange(selectedOptions);
   };
 
   return (
@@ -15,9 +11,9 @@ export default function MultiSelectInput({ id, label, options = [], value, onCha
       </label>
       <select
         id={`field-${id}`}
-        multiple // This enables multiple selection
-        value={value} // This should be an array of selected option values
-        onChange={handleChange} // Set the handler for changes
+        multiple
+        value={value}
+        onChange={handleChange}
         className="border-2 rounded p-2 w-full text-gray-800"
       >
         {options.map(option => (

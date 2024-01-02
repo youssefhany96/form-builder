@@ -1,4 +1,3 @@
-// components/BooleanInput.js
 export default function BooleanInput({ id, label, value, onChange }) {
   return (
     <div className="flex items-center">

@@ -39,10 +39,10 @@ export default function FormPage() {
     const { data, error } = await supabase
       .from("form_responses")
       .insert([{ form_id: formId, response: JSON.stringify(response) }])
-      .then((response) => ({ data: response.data, error: response.error })) // Ensure we always return an object
-      .catch((error) => ({ data: null, error: error })); // Catch any errors
+      .then((response) => ({ data: response.data, error: response.error }))
+      .catch((error) => ({ data: null, error: error }));
 
-    return { data, error }; // Return an object with data and error
+    return { data, error };
   };
 
   const handleSubmit = async (event) => {
@@ -56,7 +56,6 @@ export default function FormPage() {
       return;
     }
 
-    // Construct the response object
     const response = form.fields.map((field) => ({
       fieldId: field.id,
       value: field.value,
@@ -67,7 +66,6 @@ export default function FormPage() {
       if (error) throw error;
 
       router.push("/forms");
-      // Optionally reset the form or navigate the user away
     } catch (error) {
       console.error("Error saving form response:", error);
     }
@@ -242,7 +240,7 @@ export default function FormPage() {
               );
 
             default:
-              return null; // If the field type is not recognized
+              return null;
           }
         })}
         <button

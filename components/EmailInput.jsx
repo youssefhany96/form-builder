@@ -1,4 +1,3 @@
-// components/EmailInput.js
 export default function EmailInput({ id, label, value, onChange }) {
   return (
     <div>

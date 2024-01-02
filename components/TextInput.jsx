@@ -1,4 +1,3 @@
-// components/TextInput.js
 export default function TextInput({ id, label, value, onChange }) {
   return (
     <div>
@@ -11,7 +10,7 @@ export default function TextInput({ id, label, value, onChange }) {
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="border-2 rounded p-2 w-full text-gray-800"
-        maxlength="50"
+        maxLength="50"
       />
     </div>
   );
