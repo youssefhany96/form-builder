@@ -26,51 +26,58 @@ To set up the project on your local machine:
 
    ```bash
    git clone https://github.com/your-repository/form-builder-app.git
-Navigate to the project directory:
-bash
-Copy code
-cd form-builder-app
-Install the dependencies:
-bash
-Copy code
-npm install
-# or
-yarn install
-Environment Setup
+2. **Navigate to the project directory:**
+   ```bash
+   cd form-builder-app
+3. **Install the dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+
+## Environment Setup
 
 Create a .env.local file in the project root with the following variables:
 
-makefile
-Copy code
+```makefile
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 Replace your_supabase_url and your_supabase_anon_key with your actual Supabase project details.
 
-Running the Application
+## Running the Application
 
 To run the application in development mode:
 
-bash
-Copy code
+```bash
 npm run dev
 # or
 yarn dev
+```
 Open http://localhost:3000 with your browser to see the result.
 
-Building for Production
+## Building for Production
 
 To build the application for production:
 
-bash
-Copy code
+```bash
 npm run build
 # or
 yarn build
-Usage
+```
+## Running Tests
 
-Creating a Form: Navigate to the form builder interface to create a new form.
-Editing a Form: Click on a form to edit its fields and properties.
-Viewing Forms: All created forms are listed and can be managed from the main dashboard.
-Contributing
+To run the tests, execute the following command:
+```bash
+npm test
+# or
+yarn test
+```
+## Usage
+
+- **Creating a Form**: Navigate to the form builder interface to create a new form.
+- **Editing a Form**: Click on a form to edit its fields and properties.
+- **Viewing Forms**: All created forms are listed and can be managed from the main dashboard.
+## Contributing
 
 Contributions to the project are welcome. Please follow the standard fork, branch, and pull request workflow.
