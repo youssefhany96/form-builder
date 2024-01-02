@@ -1,8 +1,8 @@
-# Form Builder App
+# Form Builder
 
 ## Description
 
-The Form Builder App is a dynamic application developed with Next.js and integrated with Supabase for backend services. It allows users to create custom forms with various field types, manage them, and view submissions.
+The Form Builder is a dynamic application developed with Next.js and integrated with Supabase for backend services. It allows users to create custom forms with various field types, manage them, and view submissions.
 
 ## Features
 
@@ -25,10 +25,10 @@ To set up the project on your local machine:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-repository/form-builder-app.git
+   git clone https://github.com/your-repository/form-builder.git
 2. **Navigate to the project directory:**
    ```bash
-   cd form-builder-app
+   cd form-builder
 3. **Install the dependencies:**
    ```bash
    npm install
